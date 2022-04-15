@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LK.Tool", "LK.Tool.csproj", "{EA67540C-CA09-4D69-8D23-233F15189527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LK.Common", "LK.Common\LK.Common.csproj", "{7DEDDFB5-F054-414F-B8A9-283F5A3814A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA67540C-CA09-4D69-8D23-233F15189527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA67540C-CA09-4D69-8D23-233F15189527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA67540C-CA09-4D69-8D23-233F15189527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA67540C-CA09-4D69-8D23-233F15189527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DEDDFB5-F054-414F-B8A9-283F5A3814A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEDDFB5-F054-414F-B8A9-283F5A3814A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEDDFB5-F054-414F-B8A9-283F5A3814A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEDDFB5-F054-414F-B8A9-283F5A3814A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FEED6EE-59DE-470D-AE32-CDE19E5828BC}
+	EndGlobalSection
+EndGlobal
