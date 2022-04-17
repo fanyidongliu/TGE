@@ -32,6 +32,8 @@ namespace LK.Tool
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbPort = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,8 +60,6 @@ namespace LK.Tool
             this.panel3 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.tbPort = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -95,67 +95,93 @@ namespace LK.Tool
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(991, 143);
+            this.panel1.Size = new System.Drawing.Size(1321, 178);
             this.panel1.TabIndex = 0;
+            // 
+            // tbPort
+            // 
+            this.tbPort.Location = new System.Drawing.Point(381, 126);
+            this.tbPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPort.Name = "tbPort";
+            this.tbPort.Size = new System.Drawing.Size(132, 25);
+            this.tbPort.TabIndex = 22;
+            this.tbPort.Text = "3306";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(305, 131);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 15);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "端口";
             // 
             // listBox1
             // 
             this.listBox1.ContextMenuStrip = this.contextMenuStrip2;
             this.listBox1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 19;
-            this.listBox1.Location = new System.Drawing.Point(764, 18);
+            this.listBox1.ItemHeight = 24;
+            this.listBox1.Location = new System.Drawing.Point(1019, 22);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.Size = new System.Drawing.Size(214, 99);
+            this.listBox1.Size = new System.Drawing.Size(284, 100);
             this.listBox1.TabIndex = 20;
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             // 
             // contextMenuStrip2
             // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.删除ToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(101, 26);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(109, 28);
             // 
             // 删除ToolStripMenuItem
             // 
             this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
-            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.删除ToolStripMenuItem.Text = "删除";
             this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
             // lb_Count
             // 
             this.lb_Count.AutoSize = true;
-            this.lb_Count.Location = new System.Drawing.Point(211, 106);
+            this.lb_Count.Location = new System.Drawing.Point(281, 132);
+            this.lb_Count.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_Count.Name = "lb_Count";
-            this.lb_Count.Size = new System.Drawing.Size(0, 12);
+            this.lb_Count.Size = new System.Drawing.Size(0, 15);
             this.lb_Count.TabIndex = 19;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 106);
+            this.label1.Location = new System.Drawing.Point(16, 132);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 18;
             this.label1.Text = "表名模糊";
             // 
             // tb_Context
             // 
-            this.tb_Context.Location = new System.Drawing.Point(87, 101);
+            this.tb_Context.Location = new System.Drawing.Point(116, 126);
+            this.tb_Context.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Context.Name = "tb_Context";
-            this.tb_Context.Size = new System.Drawing.Size(100, 21);
+            this.tb_Context.Size = new System.Drawing.Size(132, 25);
             this.tb_Context.TabIndex = 1;
             this.tb_Context.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(440, 57);
+            this.button1.Location = new System.Drawing.Point(587, 71);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 15;
             this.button1.Text = "Star一下";
             this.button1.UseVisualStyleBackColor = true;
@@ -163,9 +189,10 @@ namespace LK.Tool
             // 
             // btn_LoadDB
             // 
-            this.btn_LoadDB.Location = new System.Drawing.Point(633, 55);
+            this.btn_LoadDB.Location = new System.Drawing.Point(844, 69);
+            this.btn_LoadDB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_LoadDB.Name = "btn_LoadDB";
-            this.btn_LoadDB.Size = new System.Drawing.Size(75, 23);
+            this.btn_LoadDB.Size = new System.Drawing.Size(100, 29);
             this.btn_LoadDB.TabIndex = 12;
             this.btn_LoadDB.Text = "加载所有表";
             this.btn_LoadDB.UseVisualStyleBackColor = true;
@@ -173,9 +200,10 @@ namespace LK.Tool
             // 
             // btn_TestConnect
             // 
-            this.btn_TestConnect.Location = new System.Drawing.Point(440, 18);
+            this.btn_TestConnect.Location = new System.Drawing.Point(587, 22);
+            this.btn_TestConnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_TestConnect.Name = "btn_TestConnect";
-            this.btn_TestConnect.Size = new System.Drawing.Size(75, 23);
+            this.btn_TestConnect.Size = new System.Drawing.Size(100, 29);
             this.btn_TestConnect.TabIndex = 11;
             this.btn_TestConnect.Text = "加载所有库";
             this.btn_TestConnect.UseVisualStyleBackColor = true;
@@ -184,85 +212,95 @@ namespace LK.Tool
             // cbb_DB
             // 
             this.cbb_DB.FormattingEnabled = true;
-            this.cbb_DB.Location = new System.Drawing.Point(598, 18);
+            this.cbb_DB.Location = new System.Drawing.Point(797, 22);
+            this.cbb_DB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbb_DB.Name = "cbb_DB";
-            this.cbb_DB.Size = new System.Drawing.Size(110, 20);
+            this.cbb_DB.Size = new System.Drawing.Size(145, 23);
             this.cbb_DB.TabIndex = 10;
             // 
             // cbb_DBType
             // 
             this.cbb_DBType.FormattingEnabled = true;
-            this.cbb_DBType.Location = new System.Drawing.Point(87, 58);
+            this.cbb_DBType.Location = new System.Drawing.Point(116, 72);
+            this.cbb_DBType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbb_DBType.Name = "cbb_DBType";
-            this.cbb_DBType.Size = new System.Drawing.Size(100, 20);
+            this.cbb_DBType.Size = new System.Drawing.Size(132, 23);
             this.cbb_DBType.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(539, 23);
+            this.label6.Location = new System.Drawing.Point(719, 29);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 12);
+            this.label6.Size = new System.Drawing.Size(52, 15);
             this.label6.TabIndex = 8;
             this.label6.Text = "选择库";
             // 
             // tb_Pwd
             // 
-            this.tb_Pwd.Location = new System.Drawing.Point(286, 58);
+            this.tb_Pwd.Location = new System.Drawing.Point(381, 72);
+            this.tb_Pwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Pwd.Name = "tb_Pwd";
-            this.tb_Pwd.Size = new System.Drawing.Size(100, 21);
+            this.tb_Pwd.Size = new System.Drawing.Size(132, 25);
             this.tb_Pwd.TabIndex = 7;
             this.tb_Pwd.Text = "123456";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(229, 62);
+            this.label5.Location = new System.Drawing.Point(305, 78);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 12);
+            this.label5.Size = new System.Drawing.Size(37, 15);
             this.label5.TabIndex = 6;
             this.label5.Text = "密码";
             // 
             // tb_UserName
             // 
-            this.tb_UserName.Location = new System.Drawing.Point(286, 18);
+            this.tb_UserName.Location = new System.Drawing.Point(381, 22);
+            this.tb_UserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_UserName.Name = "tb_UserName";
-            this.tb_UserName.Size = new System.Drawing.Size(100, 21);
+            this.tb_UserName.Size = new System.Drawing.Size(132, 25);
             this.tb_UserName.TabIndex = 5;
             this.tb_UserName.Text = "root";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(226, 23);
+            this.label4.Location = new System.Drawing.Point(301, 29);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 12);
+            this.label4.Size = new System.Drawing.Size(52, 15);
             this.label4.TabIndex = 4;
             this.label4.Text = "用户名";
             // 
             // tb_IP
             // 
-            this.tb_IP.Location = new System.Drawing.Point(88, 18);
+            this.tb_IP.Location = new System.Drawing.Point(117, 22);
+            this.tb_IP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_IP.Name = "tb_IP";
-            this.tb_IP.Size = new System.Drawing.Size(100, 21);
+            this.tb_IP.Size = new System.Drawing.Size(132, 25);
             this.tb_IP.TabIndex = 3;
-            this.tb_IP.Text = "192.168.50.240";
+            this.tb_IP.Text = "150.158.15.145";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 22);
+            this.label3.Location = new System.Drawing.Point(21, 28);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.Size = new System.Drawing.Size(68, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "服务器IP";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 63);
+            this.label2.Location = new System.Drawing.Point(17, 79);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.Size = new System.Drawing.Size(82, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "数据库类型";
             // 
@@ -271,8 +309,9 @@ namespace LK.Tool
             this.panel2.Controls.Add(this.lb_Tables);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(329, 568);
+            this.panel2.Size = new System.Drawing.Size(438, 711);
             this.panel2.TabIndex = 1;
             // 
             // lb_Tables
@@ -281,25 +320,27 @@ namespace LK.Tool
             this.lb_Tables.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lb_Tables.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lb_Tables.FormattingEnabled = true;
-            this.lb_Tables.ItemHeight = 14;
+            this.lb_Tables.ItemHeight = 17;
             this.lb_Tables.Location = new System.Drawing.Point(0, 0);
+            this.lb_Tables.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lb_Tables.Name = "lb_Tables";
             this.lb_Tables.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lb_Tables.Size = new System.Drawing.Size(329, 568);
+            this.lb_Tables.Size = new System.Drawing.Size(438, 711);
             this.lb_Tables.TabIndex = 0;
             this.lb_Tables.DoubleClick += new System.EventHandler(this.lb_Tables_DoubleClick);
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.生成文件ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(139, 28);
             // 
             // 生成文件ToolStripMenuItem
             // 
             this.生成文件ToolStripMenuItem.Name = "生成文件ToolStripMenuItem";
-            this.生成文件ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.生成文件ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.生成文件ToolStripMenuItem.Text = "生成文件";
             this.生成文件ToolStripMenuItem.Click += new System.EventHandler(this.生成文件ToolStripMenuItem_Click);
             // 
@@ -308,8 +349,9 @@ namespace LK.Tool
             this.panel3.Controls.Add(this.richTextBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(658, 568);
+            this.panel3.Size = new System.Drawing.Size(878, 711);
             this.panel3.TabIndex = 2;
             // 
             // richTextBox1
@@ -317,15 +359,17 @@ namespace LK.Tool
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(658, 568);
+            this.richTextBox1.Size = new System.Drawing.Size(878, 711);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 143);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 178);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -335,35 +379,20 @@ namespace LK.Tool
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.panel3);
-            this.splitContainer1.Size = new System.Drawing.Size(991, 568);
-            this.splitContainer1.SplitterDistance = 329;
+            this.splitContainer1.Size = new System.Drawing.Size(1321, 711);
+            this.splitContainer1.SplitterDistance = 438;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 3;
-            // 
-            // tbPort
-            // 
-            this.tbPort.Location = new System.Drawing.Point(286, 101);
-            this.tbPort.Name = "tbPort";
-            this.tbPort.Size = new System.Drawing.Size(100, 21);
-            this.tbPort.TabIndex = 22;
-            this.tbPort.Text = "3306";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(229, 105);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 12);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "端口";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 711);
+            this.ClientSize = new System.Drawing.Size(1321, 889);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "软件简称：TGE  全称：Table Generate Entity（.Net版本数据实体生成工具）";
