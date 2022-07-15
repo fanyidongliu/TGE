@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -64,8 +64,11 @@ namespace LK.Tool
             switch (Type)
             {
                 case DataBaseType.SQLServer:
-                    LinkString = string.Format(LinkSqlServerFormat, Host, Account, Password, DBName, Port);
-                    break;
+                    {
+                        DBName = "master";
+                        LinkString = string.Format(DBSqlServerFormat, Host + "," + Port, DBName, Account, Password);
+                        break;
+                    }
                 case DataBaseType.MySQL:
                     LinkString = string.Format(LinkMySqlFormat, Host, Account, Password, Port);
                     break;
@@ -79,7 +82,7 @@ namespace LK.Tool
             switch (Type)
             {
                 case DataBaseType.SQLServer:
-                    LinkString = string.Format(DBSqlServerFormat, Host, DBName, Account, Password, Port);
+                    LinkString = string.Format(DBSqlServerFormat, Host + "," + Port, DBName, Account, Password);
                     break;
                 case DataBaseType.MySQL:
                     LinkString = string.Format(DBMySqlFormat, Host, Account, Password, DBName, Port);
